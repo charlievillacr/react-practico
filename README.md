@@ -54,7 +54,7 @@
 
 - Los componentes Stateful son los más robustos de React. Los usamos creando clases que extiendan de React.Component. Nos permiten manejar estado y ciclo de vida (más adelante los estudiaremos a profundidad).
 
-``` import React, { Component } from 'react';
+import React, { Component } from 'react';
 
 class Stateful extends Component {
   constructor(props) {
@@ -65,28 +65,26 @@ class Stateful extends Component {
 
   render() {
     return (
-      <h1>{this.state.hello}h1>
+      <h1>{this.state.hello}</h1>
     );
   }
 }
 
 export default Stateful;
-```
 
 ## Componentes Stateless
 
 - También tenemos componentes Stateless o Presentacionales. Los usamos creando funciones que devuelvan código en formato JSX (del cual hablaremos en la próxima clase).
 
-``` import React from 'react';
+import React from 'react';
 
 const Stateless = () => {
   return (
-    <h1>¡Hola!h1>
+    <h1>¡Hola!</h1>
   );
 }
 
 // Otra forma de crearlos:
-const Stateless = () => <h1>¡Hola!h1>;
+const Stateless = () => <h1>¡Hola!</h1>;
 
 export default Stateless;
-```
